@@ -1,0 +1,1517 @@
+<!DOCTYPE html>
+<!-- This site was created in Webflow. https://webflow.com -->
+<!-- Last Published: Fri Dec 01 2023 15:41:56 GMT+0000 (Coordinated Universal Time) -->
+<html data-wf-domain="mm-moto.com" data-wf-page="63176d371d247373c48f216e" data-wf-site="62c5cbb3b108960b692f0576" data-wf-status="1" lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <title>MM Moto</title>
+        <meta content="MM Moto" name="description"/>
+        <meta content="MM Moto" property="og:title"/>
+        <meta content="MM Moto" property="og:description"/>
+        <meta content="" property="og:image"/>
+        <meta content="MM Moto" property="twitter:title"/>
+        <meta content="MM Moto" property="twitter:description"/>
+        <meta content="" property="twitter:image"/>
+        <meta property="og:type" content="website"/>
+        <meta content="summary_large_image" name="twitter:card"/>
+        <meta content="width=device-width, initial-scale=1" name="viewport"/>
+        <meta content="Webflow" name="generator"/>
+        <link href="style.css" rel="stylesheet" type="text/css"/>
+        <script type="text/javascript">
+            !function(o, c) {
+                var n = c.documentElement
+                  , t = " w-mod-";
+                n.className += t + "js",
+                ("ontouchstart"in o || o.DocumentTouch && c instanceof DocumentTouch) && (n.className += t + "touch")
+            }(window, document);
+        </script>
+        <link href="imgs/logo-brp1.svg" rel="shortcut icon" type="image/x-icon"/>
+        <link href="imgs/logo-brp1.svg" rel="apple-touch-icon"/>
+        
+        <link rel="stylesheet" href="https://unpkg.com/splitting/dist/splitting.css">
+        <link rel="stylesheet" href="https://unpkg.com/splitting/dist/splitting-cells.css">
+        <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+        <style>
+					:root {
+							--animation-duration: 1200ms;
+							--animation-easing: cubic-bezier(.445, .05, .55, .95);
+					}
+			
+					@media (min-width: 1024px) {
+							html, body {
+									overscroll-behavior: none;
+							}
+					}
+			
+					/* barba */
+					@keyframes fadeInUpDisappearBig {
+							from {
+									opacity: 1;
+							}
+			
+							to {
+									opacity: 0;
+							}
+					}
+			
+					@keyframes fadeInUpAppearBig {
+							from {
+									opacity: 0;
+							}
+			
+							to {
+									opacity: 1;
+							}
+					}
+			
+					.main--disappear, .main--disappear ~ footer {
+							animation: fadeInUpDisappearBig 500ms linear;
+					}
+			
+					.main--appear, .main--appear ~ footer {
+							animation: fadeInUpAppearBig 500ms linear;
+					}
+			
+					/* barba end */
+					.word {
+							overflow: hidden;
+							padding: 20px 0px;
+							margin: -20px 0px;
+					}
+			
+					/* Button Animation */
+					@keyframes buttonSlide {
+							from {
+									left: -100%;
+							}
+			
+							to {
+									left: 0%;
+							}
+					}
+			
+					.slick-active .button-wrapper .button, 
+					.button-wrapper__trigger.start .button-wrapper .button {
+							left: -100%;
+							animation: buttonSlide 0.8s cubic-bezier(0.5, 0, 0.5, 1) both;
+					}
+			
+					.slick-active .button-wrapper .button.button--dark.button--bkg, 
+					.button-wrapper__trigger.start .button-wrapper .button.button--dark.button--bkg {
+							left: -100%;
+							animation: buttonSlide 0.6s cubic-bezier(0.5, 0, 0.5, 1) both;
+					}
+			
+					.slick-active .button-wrapper .button.button--bkg, 
+					.button-wrapper__trigger.start .button-wrapper .button.button--bkg {
+							left: -100%;
+							animation: buttonSlide 0.4s cubic-bezier(0.5, 0, 0.5, 1) both;
+					}
+			
+					.button-wrapper__trigger .button-wrapper .button {
+							left: -100%;
+					}
+			
+					.button-wrapper__trigger .button-wrapper .button.button--dark.button--bkg {
+							left: -100%;
+					}
+			
+					.button-wrapper__trigger .button-wrapper .button.button--bkg {
+							left: -100%;
+					}
+			
+					/* Slider and Splitting Animations  */
+					@keyframes fadeInUp {
+							from {
+									opacity: 0;
+									transform: translate3d(0, 3em, 0);
+							}
+			
+							to {
+									opacity: 1;
+									transform: none;
+							}
+					}
+			
+					@keyframes fadeInRight {
+							from {
+									opacity: 0;
+									transform: translate3d(1em, 0, 0);
+							}
+			
+							to {
+									opacity: 1;
+									transform: none;
+							}
+					}
+			
+					@keyframes fadeInLeft {
+							from {
+									opacity: 0;
+									transform: translate3d(-1rem, 0px, 0px);
+							}
+			
+							to {
+									opacity: 1;
+									transform: translate3d(0rem, 0px, 0px);
+							}
+					}
+			
+					@keyframes dividerGrowth {
+							from {
+									width: 0vw;
+							}
+			
+							to {
+									width: 100vw;
+							}
+					}
+			
+					.slick-slide.slick-active .intro__title-slick.splitting .char, 
+					.slick-slide.slick-active .content__title--main-slick.splitting .char, 
+					.intro__title.splitting.start .char, 
+					.content__title--main.splitting.start .char, 
+					.intro__subtitle.splitting.start .char, 
+					.content__title--small.splitting.start .char {
+							opacity: 0;
+							animation: fadeInUp 0.8s cubic-bezier(0.5, 0, 0.5, 1) both;
+							animation-delay: calc(20ms * var(--char-index));
+					}
+			
+					.slick-slide.slick-active .content__help-slick.splitting .char, 
+					.content__help.splitting.start .char {
+							opacity: 0;
+							animation: fadeInRight 0.8s cubic-bezier(.25, .1, .216, 1.422) both;
+							animation-delay: calc(20ms * var(--char-index));
+					}
+			
+					.content__copy--big.splitting.start .word, 
+					.content__copy.splitting.start .word, 
+					.content__copy--gray.splitting.start .word {
+							opacity: 0;
+							animation: fadeInLeft 1.6s cubic-bezier(.25, .1, .216, 1.422) both;
+							animation-delay: calc(150ms * var(--line-index));
+					}
+			
+					.slick-slide.slick-active .bottom-menu__text-slick.splitting .char, 
+					.slick-slide.slick-active .bottom-menu__title-slick.splitting .char, 
+					.bottom-menu__title.splitting.start .char, 
+					.bottom-menu__text.splitting.start .char, 
+					.content-vehicle__text.splitting.start .char {
+							opacity: 0;
+							animation: fadeInLeft 1.2s linear both;
+							animation-delay: calc(40ms * (var(--char-index) + var(--word-index)));
+					}
+			
+					.slick-slide.slick-active .bottom-menu__divider.intro, 
+					.bottom-menu__divider.intro.start {
+							width: 0vw;
+							animation: dividerGrowth 1.2s var(--animation-easing) both;
+					}
+			
+					@media (pointer: coarse) {
+							.home-intro .intro__title-slick .char, 
+							.home-intro .content__help-slick .char {
+									opacity: 0;
+									animation: fadeInUp 0.8s cubic-bezier(0.5, 0, 0.5, 1) both;
+									animation-delay: calc(20ms * var(--char-index));
+							}
+					}
+			
+					.content-accordion__trigger, 
+					.content__tab-link, 
+					.faq-accordion__trigger {
+							opacity: 0;
+							transition: opacity 1.4s linear;
+					}
+			
+					.content-accordion__trigger.start, 
+					.content__tab-link.start, 
+					.faq-accordion__trigger.start {
+							opacity: 1;
+					}
+			
+					.faq-accordion__trigger svg {
+							transition: transform .5s ease;
+					}
+			
+					.faq-accordion__trigger.active svg {
+							transform: rotate(45deg);
+					}
+			
+					.collection__card-item {
+							opacity: 0;
+							transition: opacity 1.2s linear;
+					}
+			
+					.collection__card-item.start {
+							opacity: 1;
+					}
+			
+					.collection__card-item .collection__card-item--bkg, 
+					.image--full {
+							transform: scale(1.1);
+							transition: transform 0.8s var(--animation-easing);
+					}
+			
+					.collection__card-item.start .collection__card-item--bkg, 
+					.image--full.start {
+							transform: scale(1);
+					}
+			
+					/* homepage slider */
+					.home-intro:not(.technology-track) .section, 
+					#slider .section {
+							overflow: hidden;
+					}
+			
+					.callout__main {
+							left: -100%;
+							transition: left 800ms ease-in-out;
+					}
+			
+					.callout__white {
+							left: -100%;
+							transition: left 600ms ease-in-out;
+					}
+			
+					.callout__black {
+							left: -100%;
+							transition: left 400ms ease-in-out;
+					}
+			
+					.slick-active .callout__main, 
+					.slick-active .callout__white, 
+					.slick-active .callout__black {
+							left: 0%;
+					}
+			
+					.slick-active .section__bkg {
+							transform: scale(1);
+					}
+			
+					.fade--in {
+							opacity: 0;
+					}
+			
+					.fade--in.start {
+							animation: fadeInLeft 1.6s cubic-bezier(.25, .1, .216, 1.422) both;
+					}
+			
+					html.w-editor .fade--in {
+							opacity: 1 !important;
+					}
+			
+					.char {
+							opacity: 0;
+					}
+			
+					/*Animations*/
+					.anim__overlay {
+							display: block;
+							transition-delay: calc(var(--index) * .15s);
+					}
+			
+					h3, h4, h5, 
+					.content__help, 
+					.content__title--main, 
+					.content__copy, 
+					.content__copy--big, 
+					.content__copy--gray, 
+					.content-accordion__trigger, 
+					.content__tab-link {
+							opacity: 0;
+							transition: opacity .8s;
+					}
+			
+					h3.start, 
+					h4.start, 
+					h5.start, 
+					.content__help.start, 
+					.content__title--main.start, 
+					.content__copy.start, 
+					.content__copy--big.start, 
+					.content__copy--gray.start, 
+					.content-accordion__trigger.start, 
+					.content__tab-link.start {
+							opacity: 1;
+					}
+			
+					@keyframes buttonSlideRight {
+							from {
+									left: -100%;
+							}
+			
+							to {
+									left: 0%;
+							}
+					}
+			
+					.button-wrapper__trigger .button-wrapper .button {
+							left: -100%;
+							animation: buttonSlideRight 0.8s cubic-bezier(0.5, 0, 0.5, 1) both;
+					}
+			</style>
+			
+    </head>
+    <body data-barba="wrapper">
+        <main data-barba-namespace="home" data-barba="container">
+            <div class="nav--symbol"></div>
+            <div class="fixed w-embed">
+                <style>
+                    @media (min-width: 1024px) {
+                        body {
+                            overscroll-behavior: none;
+                        }
+
+                        .section--wrapper {
+                            height: 100vh;
+                            display: block;
+                            /*background:#fff;*/
+                        }
+
+                        .section--wrapper:nth-child(1) {
+                            height: 100vh;
+                        }
+
+                        .section-bkg--wrapper,.video--wrapper, .video--wrapper video {
+                            position: absolute!important;
+                        }
+
+                        @media not all and (min-resolution: .001dpcm) and (min-width:1024px) {
+                            @supports (-webkit-appearance:none) {
+                                /*safari only code*/ .section--wrapper {
+                                    /*height:100vh!important; 
+  	background-attachment: initial!important;
+    background-size: cover !important;
+    background-position: center center!important;
+    background-repeat: no-repeat!important;
+    background-position-y:0!important;*/background-image:none!important;
+                                }
+
+                                .section__bkg {
+                                    transition: transform 1200ms var(--animation-easing), opacity 800ms linear;
+                                    transform: scale(1);
+                                }
+
+                                .anchor:not(.w--current) ~ .section-bkg--wrapper .section__bkg {
+                                    opacity: 0;
+                                }
+
+                                .section-bkg--wrapper {
+                                    display: block!important;
+                                }
+                            }
+                        }
+
+                        section.section--wrapper {
+                            /*background-size:100%;
+    background-position-y: calc(var(--progress)*-2.5vh + 2.5vh);*/
+                            will-change: background-position-y!important;
+                        }
+
+                        .section__bkg {
+                            transition: transform 1200ms var(--animation-easing);
+                            transform: scale(1);
+                        }
+
+                        .anchor:not(.w--current) ~ .section {
+                            opacity: 0;
+                            pointer-events: none;
+                        }
+
+                        #section1 .anchor.w--current ~ .section-bkg--wrapper .section__bkg {
+                            transform: scale(1);
+                        }
+
+                        .section.section--fixed {
+                            position: relative;
+                            top: 0;
+                            left: 0;
+                            right: 0;
+                            bottom: 0;
+                            z-index: 2;
+                        }
+
+                        .anchor:not(.w--current) ~ .section .words.lines.splitting .word:after {
+                            content: attr(data-word);
+                            position: absolute;
+                            left: 0;
+                            width: 100%;
+                            height: 100%;
+                            visibility: initial;
+                            opacity: 0;
+                            transition: opacity .8s,transform .8s var(--animation-easing);
+                            transform: translate3d(0,1em,0);
+                            transition-delay: calc(var(--line-index)*.15s);
+                            /*    margin-top: 1.3rem;*/
+                        }
+
+                        .anchor:not(.w--current) ~ .section h1.words.lines.splitting .word:after {
+                            top: -.3rem;
+                        }
+
+                        .anchor.w--current ~ .section .words.lines.splitting.start .word:after {
+                            opacity: 1;
+                            transform: translate3d(0,0,0);
+                        }
+                    }
+
+                    .anchor.w--current ~ .section .callout__main, .anchor.w--current ~ .section .callout__white, .anchor.w--current ~ .section .callout__black {
+                        left: 0%;
+                    }
+
+                    @media (max-width: 1023px) {
+                        .anchor.w--current ~ .section-bkg--wrapper .section__bkg {
+                            transform: scale(1);
+                        }
+
+                        #section1 .section .section__bottom {
+                            opacity: calc(var(--progress) * -2.75 + 4);
+                        }
+
+                        #section1 .anchor:not(.w--current) ~ .section .section__bottom {
+                            opacity: 0;
+                            pointer-events: none;
+                        }
+                    }
+
+                    .bkg--gradient {
+                        pointer-events: none;
+                    }
+
+                    .anchor.w--current ~ .section .bottom-menu__divider {
+                        width: 100vw;
+                    }
+
+                    .anchor.w--current ~ .section.section-intro {
+                        opacity: 1;
+                    }
+
+                    .section__bkg-video {
+                        pointer-events: none;
+                    }
+                </style>
+            </div>
+            <div id="fullpage" data-w-id="0f9dbe39-a9c1-bd45-a1e6-00376fb681f3" class="home-intro">
+							<section id="section1" class="section--wrapper image-1">
+								<a href="#section1" class="anchor w-inline-block"></a>
+								<div class="section-bkg--wrapper m--show m--hide"></div>
+								<div class="section section__full section--fixed section-intro">
+										<div class="container w-container">
+												<div class="content__top-bar no-line intro">
+														<!-- <div class="content__help-slick" id="start-button">[Start]</div>
+														<div class="content__help-slick" style="padding-top: 20px;" id="pause-button">[Pause]</div> -->
+														<!-- <h1 scroll-anim="true" class="intro__title intro__title--small">
+																Adventure Anywhere<span class="span--break"></span>
+														</h1> -->
+														<div id="w-node-_0f9dbe39-a9c1-bd45-a1e6-00376fb68200-c48f216e" class="content__help-slick right">[Scroll Down]</div>
+												</div>
+										</div>
+										<div class="section__bottom bottom-menu position--absolute m--fixed" style="padding-bottom: 60px;">
+												<div class="bottom-menu__divider intro"></div>
+												<div class="container w-container">
+														<div class="flex--horizontal m--vertical gap--20">
+																<div class="bottom-menu__left-col">
+																		<div class="intro__help-block">
+																				<h4 class="intro__title bottom-menu__title">The power is unleashed!</h4>
+																				<div class="bottom-menu__text-slick d--hidden">Founders Edition</div>
+																		</div>
+																		<div class="bottom-menu__text-slick">
+																				Electric motorcycles lineup is here and it's exciting on every level!
+																		</div>
+																</div>
+																<div class="bottom-menu__right-col">
+																		<div class="button-wrapper__intro align--center">
+																				<div class="bottom-menu__text-slick">
+																						Limited edition <br/>
+																				</div>
+																				<div class="button-wrapper__trigger m--full">
+																						<div class="button-wrapper">
+																								<a href="#" target="_blank" class="button w-inline-block">
+																										<div>pre-order</div>
+																								</a>
+																								<div class="button button--dark button--bkg">
+																										<div>pre-order</div>
+																								</div>
+																								<div class="button button--bkg">
+																										<div>pre-order</div>
+																								</div>
+																						</div>
+																				</div>
+																		</div>
+																</div>
+														</div>
+												</div>
+										</div>
+										<div class="bkg--gradient"></div>
+								</div>
+								<div class="section__bkg-video relative">
+									<div class="video--wrapper w-embed">
+											<video id="background-videojs" style="width:100vw;height:100vh;object-fit:cover;" autoplay playsinline muted loop disableRemotePlayback poster="imgs/videoplayback.jpg">
+													<source src="imgs/Hero.mp4" type="video/mp4">
+											</video>
+									</div>
+							</div>
+							
+							<!-- <div class="content__help-slick" id="start-button">[Start]</div>
+							<div class="content__help-slick" style="padding-top: 20px;" id="pause-button">[Pause]</div>
+							<div class="content__help-slick" style="padding-top: 40px;" id="mute-button">[Mute/Unmute]</div> -->
+							
+							<script>
+							document.addEventListener('DOMContentLoaded', function() {
+									var video = document.getElementById('background-videojs');
+									var startButton = document.getElementById('start-button');
+									var pauseButton = document.getElementById('pause-button');
+									var muteButton = document.getElementById('mute-button');
+							
+									// Попытка автовоспроизведения
+									var playPromise = video.play();
+							
+									if (playPromise !== undefined) {
+											playPromise.then(_ => {
+													// Автовоспроизведение началось
+													video.muted = true;
+											})
+											.catch(error => {
+													// Автовоспроизведение не удалось
+													console.log("Автовоспроизведение не удалось:", error);
+											});
+									}
+							
+									startButton.addEventListener('click', function() {
+											video.currentTime = 0;
+											video.play();
+									});
+							
+									pauseButton.addEventListener('click', function() {
+											video.pause();
+									});
+							
+									muteButton.addEventListener('click', function() {
+											if (video.muted) {
+													video.muted = false;
+													video.volume = 0.2;
+											} else {
+													video.muted = true;
+											}
+									});
+							});
+							</script>
+						</section>
+                <section id="section2" class="section--wrapper">
+                    <a href="#section2" class="anchor w-inline-block"></a>
+                    <div class="section-bkg--wrapper">
+                        <img src="imgs/1 (9).png" loading="lazy"  alt="" class="image--full"/>
+                    </div>
+                    <div class="section section__full section--fixed">
+                        <div class="container flex--vertical justify--space-between m--start w-container">
+                            <div class="content__top-bar no-line">
+                                <div class="content__help-slick">[00 - 1]</div>
+                                <h2 scroll-anim="true" class="content__title--main color--white">
+                                    The all-new Can-Am Outlander
+                                </h2>
+                                <div class="content__help right">[Outlander]</div>
+                                <div class="content__help right">[Outlander]</div>
+                            </div>
+                            <div class="content__bottom-bar">
+                                <div class="bottom-block__wrapper">
+                                    <div class="callout">
+                                        <a href="/adventure1" class="callout__main w-inline-block">
+                                            <h4 class="content__lead mb--12">Changing the face of ATV riding</h4>
+                                            <p class="content__copy--gray mb--32">Everything you need to rule outdoors. The all-new Outlander puts power and stability on equal footing, for confident handling, the most horsepower & the best hauling of its category.
+																							<br>Prepare to be amazed. Stay tuned!</p>
+                                            <div class="link--icon">
+                                                <div class="w-embed">
+                                                    <svg width="17px" height="18px" viewBox="0 0 17 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                        <g id="UI-Design" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                                            <g id="Potential-Motors---UI---Home-Page-02" transform="translate(-62.000000, -3163.000000)" fill="currentColor" fill-rule="nonzero">
+                                                                <g id="Screen-01-Copy-2" transform="translate(0.000000, 2430.000000)">
+                                                                    <g id="Group-9" transform="translate(34.000000, 578.000000)">
+                                                                        <g id="Group-6-Copy" transform="translate(24.000000, 152.000000)">
+                                                                            <path d="M20.4138932,10.9998932 L20.4198932,11.0058932 L20.4058932,13.0078932 L12.7071068,20.7071068 L11.2928932,19.2928932 L17.584,12.9998932 L4,13 L4,11 L20.4138932,10.9998932 Z M12.7071068,3.29289322 L17.7068932,8.29289322 L16.2928932,9.70689322 L11.2928932,4.70710678 L12.7071068,3.29289322 Z" id="Combined-Shape"></path>
+                                                                        </g>
+                                                                    </g>
+                                                                </g>
+                                                            </g>
+                                                        </g>
+                                                    </svg>
+                                                </div>
+                                                <div>Learn More</div>
+                                            </div>
+                                        </a>
+                                        <div class="callout__white"></div>
+                                        <div class="callout__black"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bkg--gradient"></div>
+                    </div>
+                </section>
+                <div>
+                    <div class="w-embed">
+                        <style>
+                            body {
+                                min-height: 0vw;
+                                font-size: calc(0.7902298850574712vw + 0.38505747126436796em);
+                            }
+
+                            /* Max Font Size */
+                            @media screen and (min-width: 1920px) {
+                                body {
+                                    font-size: 1.2em;
+                                }
+                            }
+
+                            /* Min Font Size */
+                            @media screen and (max-width: 991px) {
+                                body {
+                                    font-size: calc(0.20181634712411706vw + 0.725em);
+                                }
+                            }
+
+                            .container {
+                                max-width: 85.75em;
+                            }
+                        </style>
+                    </div>
+                    <div class="fixed w-embed">
+                        <style>
+                            .w-embed.fixed, [pointer-events=none] {
+                                pointer-events: none;
+                            }
+
+                            html.w-editor .content-accordion__content-wrapper, html.w-editor .faq-accordion__content-wrapper, html.w-editor .w-editor-publish-node.w-editor-publish-node-fade-out {
+                                display: block !important;
+                            }
+
+                            html.w-editor .collection__card-item, html.w-editor h3, html.w-editor h4, html.w-editor h5, html.w-editor .content__help, html.w-editor .content__title--main, html.w-editor .content__copy, html.w-editor .content__copy--big, html.w-editor .content__copy--gray, html.w-editor .content-accordion__trigger, html.w-editor .content__tab-link {
+                                opacity: 1 !important;
+                            }
+
+                            html.w-editor .anim__overlay {
+                                display: none !important;
+                                opacity: 0 !important;
+                                pointer-events: none !important;
+                            }
+
+                            * {
+                                text-rendering: geometricPrecision;
+                            }
+
+                            :root {
+                                --color-white: #ffffff;
+                                --color-black: #111111;
+                                --edgesize: .71em;
+                            }
+
+                            .bottom-menu__wrapper, .nav__wrapper {
+                                pointer-events: none !important;
+                            }
+
+                            .button,.content__tab-menu, .callout__white, .newsletter__main--white {
+                                background: var(--color-white);
+                                background: -moz-linear-gradient(45deg, transparent 0px, var(--color-white) 0px), -moz-linear-gradient(135deg, transparent var(--edgesize), var(--color-white) var(--edgesize)), -moz-linear-gradient(225deg, transparent 0px, var(--color-white) 0px), -moz-linear-gradient(315deg, transparent var(--edgesize), var(--color-white) var(--edgesize));
+                                background: -o-linear-gradient(45deg, transparent 0px, var(--color-white) 0px), -o-linear-gradient(135deg, transparent var(--edgesize), var(--color-white) var(--edgesize)), -o-linear-gradient(225deg, transparent 0px, var(--color-white) 0px), -o-linear-gradient(315deg, transparent var(--edgesize), var(--color-white) var(--edgesize));
+                                background: -webkit-linear-gradient(45deg, transparent 0px, var(--color-white) 0px), -webkit-linear-gradient(135deg, transparent var(--edgesize), var(--color-white) var(--edgesize)), -webkit-linear-gradient(225deg, transparent 0px, var(--color-white) 0px), -webkit-linear-gradient(315deg, transparent var(--edgesize), var(--color-white) var(--edgesize));
+                            }
+
+                            .button.button--dark,.content__tab-link.w-current,.section__callout,.content__tab-link.w--current, .callout__main, .callout__black {
+                                background: var(--color-black);
+                                background: -moz-linear-gradient(45deg, transparent 0px, var(--color-black) 0px), -moz-linear-gradient(135deg, transparent var(--edgesize), var(--color-black) var(--edgesize)), -moz-linear-gradient(225deg, transparent 0px, var(--color-black) 0px), -moz-linear-gradient(315deg, transparent var(--edgesize), var(--color-black) var(--edgesize));
+                                background: -o-linear-gradient(45deg, transparent 0px, var(--color-black) 0px), -o-linear-gradient(135deg, transparent var(--edgesize)m, var(--color-black) var(--edgesize)), -o-linear-gradient(225deg, transparent 0px, var(--color-black) 0px), -o-linear-gradient(315deg, transparent var(--edgesize), var(--color-black) var(--edgesize));
+                                background: -webkit-linear-gradient(45deg, transparent 0px, var(--color-black) 0px), -webkit-linear-gradient(135deg, transparent var(--edgesize), var(--color-black) var(--edgesize)), -webkit-linear-gradient(225deg, transparent 0px, var(--color-black) 0px), -webkit-linear-gradient(315deg, transparent var(--edgesize), var(--color-black) var(--edgesize));
+                            }
+
+                            .button,.button.button--dark, .section__callout, .content__tab-link, .content__tab-link.w--current, .content__tab-menu, .callout__main, .callout__white, .callout__black, .newsletter__main--white {
+                                background-position: bottom left, bottom right, top right, top left;
+                                -moz-background-size: 51% 51%;
+                                -webkit-background-size: 51% 51%;
+                                background-size: 51% 51%;
+                                background-repeat: no-repeat;
+                            }
+
+                            @media screen and (max-width: 1280px) and (min-width: 1024px) {
+                                .nav__menu-link-label--big {
+                                    font-size: 80px;
+                                    line-height: 80px;
+                                }
+                            }
+
+                            .nav--menu {
+                                pointer-events: none;
+                            }
+
+                            .nav--menu.open {
+                                pointer-events: auto;
+                            }
+
+                            .collection__list {
+                                -ms-overflow-style: none;
+                                scrollbar-width: none;
+                            }
+
+                            .collection__list::-webkit-scrollbar {
+                                display: none;
+                            }
+
+                            .button-dark-item {
+                                filter: invert(1);
+                            }
+
+                            main.light .nav__link,main.light .nav__button,main.light .nav .logo--wrapper,[style*="background-color: rgb(255, 255, 255)"] .nav__link,[style*="background-color: rgb(255, 255, 255)"] .logo--wrapper {
+                                color: #323232!important;
+                            }
+
+                            .logo--footer {
+                                color: #d6d6d6 !important;
+                            }
+
+                            .utility__grid-wrapper {
+                                pointer-events: none;
+                            }
+
+                            .newsletter__alert {
+                                pointer-events: none;
+                            }
+
+                            .newsletter__alert.active {
+                                pointer-events: auto;
+                            }
+                        </style>
+                    </div>
+                    <nav class="nav">
+                        <div class="container nav-grid w-container">
+                            <div id="w-node-_2fbd7b22-32f6-8b0a-fe70-27d91d6e4870-1d6e486c" class="nav__grid-left">
+                                <a href="/products" class="nav__link left">Our products</a>
+                                <a href="/off-road-os" class="nav__link">Build your own vehicle</a>
+																<a href="/accessories" class="nav__link">Accessories & Gear</a>
+                            </div>
+                            <div id="w-node-_2fbd7b22-32f6-8b0a-fe70-27d91d6e4875-1d6e486c" class="nav__grid-mid">
+                                <a href="/" aria-current="page" class="logo--wrapper w-inline-block w--current">
+                                    <div class="m--hidden">
+                                        <div class="logo logo--main w-embed"><img src="imgs/logo-brp1.svg" style="margin-top: -23px;">
+                                            <!-- <svg style="display:block;" width="100%" height="100%" viewBox="0 0 86 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                <g id="UI-Design" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                                    <g id="Potential-Motors---UI---Home-Page-02" transform="translate(-677.000000, -19.000000)">
+                                                        <rect fill="none" x="0" y="0" width="1440" height="5894"></rect>
+                                                        <g id="Brand-Elements/Logo---Mark-+-Text-(Vertical)" fill="currentColor" transform="translate(677.000000, 19.000000)">
+                                                            <path d="M10.219751,36.6126194 C10.5450125,36.6126194 10.697729,36.4532749 10.697729,36.1777776 L10.697729,35.6051871 C10.703915,35.5396819 10.6955197,35.4735691 10.6731508,35.411654 C10.6507818,35.3497389 10.6150467,35.2935127 10.5683756,35.2470626 C10.5217598,35.2005572 10.4654231,35.1649878 10.4034527,35.1428397 C10.3414272,35.1206917 10.2753144,35.1125173 10.209754,35.1189242 L7.49294549,35.1189242 L7.49294549,36.6126194 L10.219751,36.6126194 Z M12.3573412,35.2782687 L12.3573412,36.4316792 C12.3573412,37.5005295 11.7267018,38.2307523 10.0570927,38.2307523 L7.49294549,38.2307523 L7.49294549,39.9965756 L5.83333333,39.9965756 L5.83333333,33.4792232 L10.0570927,33.4792232 C11.7333297,33.4792232 12.3573412,34.2078166 12.3573412,35.2782687 Z M20.7649823,37.729632 C20.7650626,37.9020664 20.6981515,38.0677073 20.5782428,38.1915927 C20.4583893,38.3154782 20.2950129,38.3878874 20.1227442,38.3935211 L17.0607355,38.3935211 C16.8886877,38.3875008 16.7257532,38.3148706 16.6062311,38.1910404 C16.486709,38.0672102 16.4200186,37.9017903 16.4200991,37.729632 L16.4200991,35.7380753 C16.4173928,35.5642601 16.4829532,35.3962995 16.6027515,35.2703152 C16.7225497,35.144331 16.8869755,35.0703753 17.0607355,35.0642998 L20.1227442,35.0642998 C20.2967804,35.0699334 20.4615927,35.1437234 20.5817777,35.2697629 C20.7019073,35.3958024 20.7676887,35.563984 20.7649823,35.7380753 L20.7649823,37.729632 Z M22.4247602,37.9570223 L22.4247602,35.5173681 C22.4247602,34.4469161 21.7923534,33.4776823 20.1227442,33.4776823 L17.0607355,33.4776823 C15.3911263,33.4776823 14.760487,34.4469161 14.760487,35.5173681 L14.760487,37.9603362 C14.760487,39.0307883 15.3911263,40 17.0607355,40 L20.1227442,40 C21.7923534,40 22.4247602,39.0307883 22.4247602,37.9603362 L22.4247602,37.9570223 Z M24.2568067,35.0609858 L24.2568067,33.4776823 L31.4430467,33.4776823 L31.4430467,35.0609858 L28.724526,35.0609858 L28.724526,39.9966861 L27.0565185,39.9966861 L27.0565185,35.0609858 L24.2568067,35.0609858 Z M33.6451479,33.4776823 L33.6451479,39.9966861 L39.405849,39.9966861 L39.405849,38.4018059 L35.3048705,38.4018059 L35.3048705,37.5089248 L39.0888171,37.5089248 L39.0888171,35.9239864 L35.3048705,35.9239864 L35.3048705,35.0609858 L39.405849,35.0609858 L39.405849,33.4776823 L33.6451479,33.4776823 Z M42.0531204,39.9967965 L42.0531204,33.4777651 L42.0564343,33.3831637 L47.7204794,36.9596422 L47.7204794,33.4777651 L49.381859,33.4777651 L49.381859,39.9967965 L49.3652893,39.9967965 L43.6913025,36.4252723 L43.6913025,39.9967965 L42.0531204,39.9967965 Z M51.4878564,33.4776823 L51.4878564,35.0974942 L54.2881205,35.0974942 L54.2881205,39.9966861 L55.9555756,39.9966861 L55.9555756,35.0974942 L58.6740963,35.0974942 L58.6740963,33.4776823 L51.4878564,33.4776823 Z M60.7939018,33.4776823 L62.4530721,33.4776823 L62.4530721,39.9966861 L60.7939018,39.9966861 L60.7939018,33.4776823 Z M64.2370668,39.9967413 L66.2353618,39.9967413 L68.4661836,36.4053335 L70.9206952,39.9967413 L72.884194,39.9967413 L68.492695,33.3333333 L64.2370668,39.9967413 Z M74.3130467,39.9966861 L74.3130467,33.4776823 L75.9926529,33.4776823 L75.9926529,38.4150616 L79.8693894,38.4150616 L79.8693894,39.9966861 L74.3130467,39.9966861 Z M40,8.54012495 L35.2250647,5 L11.6666667,22.5 L21.2124095,22.5 L40,8.54012495 Z M50.6048897,5 L45.8333333,8.54330554 L64.6195066,22.5 L74.1666667,22.5 L50.6048897,5 Z M42.9206695,6.07249198 L50.8789568,3.55271368e-15 L85.8333333,26.6666667 L0,26.6666667 L34.9503497,3.55271368e-15 L42.9206695,6.07249198 Z M42.9206695,6.07249198 L40,8.54012495 L42.9186768,10.8333333 L45.8333333,8.54330554 L42.9206695,6.07249198 Z M42.9186768,10.8333333 L27.5,22.5 L58.3333333,22.5 L42.9186768,10.8333333 Z"></path>
+                                                            <path d="M10.219751,36.6126194 C10.5450125,36.6126194 10.697729,36.4532749 10.697729,36.1777776 L10.697729,35.6051871 C10.703915,35.5396819 10.6955197,35.4735691 10.6731508,35.411654 C10.6507818,35.3497389 10.6150467,35.2935127 10.5683756,35.2470626 C10.5217598,35.2005572 10.4654231,35.1649878 10.4034527,35.1428397 C10.3414272,35.1206917 10.2753144,35.1125173 10.209754,35.1189242 L7.49294549,35.1189242 L7.49294549,36.6126194 L10.219751,36.6126194 Z M12.3573412,35.2782687 L12.3573412,36.4316792 C12.3573412,37.5005295 11.7267018,38.2307523 10.0570927,38.2307523 L7.49294549,38.2307523 L7.49294549,39.9965756 L5.83333333,39.9965756 L5.83333333,33.4792232 L10.0570927,33.4792232 C11.7333297,33.4792232 12.3573412,34.2078166 12.3573412,35.2782687 Z M20.7649823,37.729632 C20.7650626,37.9020664 20.6981515,38.0677073 20.5782428,38.1915927 C20.4583893,38.3154782 20.2950129,38.3878874 20.1227442,38.3935211 L17.0607355,38.3935211 C16.8886877,38.3875008 16.7257532,38.3148706 16.6062311,38.1910404 C16.486709,38.0672102 16.4200186,37.9017903 16.4200991,37.729632 L16.4200991,35.7380753 C16.4173928,35.5642601 16.4829532,35.3962995 16.6027515,35.2703152 C16.7225497,35.144331 16.8869755,35.0703753 17.0607355,35.0642998 L20.1227442,35.0642998 C20.2967804,35.0699334 20.4615927,35.1437234 20.5817777,35.2697629 C20.7019073,35.3958024 20.7676887,35.563984 20.7649823,35.7380753 L20.7649823,37.729632 Z M22.4247602,37.9570223 L22.4247602,35.5173681 C22.4247602,34.4469161 21.7923534,33.4776823 20.1227442,33.4776823 L17.0607355,33.4776823 C15.3911263,33.4776823 14.760487,34.4469161 14.760487,35.5173681 L14.760487,37.9603362 C14.760487,39.0307883 15.3911263,40 17.0607355,40 L20.1227442,40 C21.7923534,40 22.4247602,39.0307883 22.4247602,37.9603362 L22.4247602,37.9570223 Z M24.2568067,35.0609858 L24.2568067,33.4776823 L31.4430467,33.4776823 L31.4430467,35.0609858 L28.724526,35.0609858 L28.724526,39.9966861 L27.0565185,39.9966861 L27.0565185,35.0609858 L24.2568067,35.0609858 Z M33.6451479,33.4776823 L33.6451479,39.9966861 L39.405849,39.9966861 L39.405849,38.4018059 L35.3048705,38.4018059 L35.3048705,37.5089248 L39.0888171,37.5089248 L39.0888171,35.9239864 L35.3048705,35.9239864 L35.3048705,35.0609858 L39.405849,35.0609858 L39.405849,33.4776823 L33.6451479,33.4776823 Z M42.0531204,39.9967965 L42.0531204,33.4777651 L42.0564343,33.3831637 L47.7204794,36.9596422 L47.7204794,33.4777651 L49.381859,33.4777651 L49.381859,39.9967965 L49.3652893,39.9967965 L43.6913025,36.4252723 L43.6913025,39.9967965 L42.0531204,39.9967965 Z M51.4878564,33.4776823 L51.4878564,35.0974942 L54.2881205,35.0974942 L54.2881205,39.9966861 L55.9555756,39.9966861 L55.9555756,35.0974942 L58.6740963,35.0974942 L58.6740963,33.4776823 L51.4878564,33.4776823 Z M60.7939018,33.4776823 L62.4530721,33.4776823 L62.4530721,39.9966861 L60.7939018,39.9966861 L60.7939018,33.4776823 Z M64.2370668,39.9967413 L66.2353618,39.9967413 L68.4661836,36.4053335 L70.9206952,39.9967413 L72.884194,39.9967413 L68.492695,33.3333333 L64.2370668,39.9967413 Z M74.3130467,39.9966861 L74.3130467,33.4776823 L75.9926529,33.4776823 L75.9926529,38.4150616 L79.8693894,38.4150616 L79.8693894,39.9966861 L74.3130467,39.9966861 Z" id="Shape"></path>
+                                                            <path d="M40,8.54012495 L35.2250647,5 L11.6666667,22.5 L21.2124095,22.5 L40,8.54012495 Z M50.6048897,5 L45.8333333,8.54330554 L64.6195066,22.5 L74.1666667,22.5 L50.6048897,5 Z M42.9206695,6.07249198 L50.8789568,3.55271368e-15 L85.8333333,26.6666667 L0,26.6666667 L34.9503497,3.55271368e-15 L42.9206695,6.07249198 Z M42.9206695,6.07249198 L40,8.54012495 L42.9186768,10.8333333 L45.8333333,8.54330554 L42.9206695,6.07249198 Z M42.9186768,10.8333333 L27.5,22.5 L58.3333333,22.5 L42.9186768,10.8333333 Z" id="Shape"></path>
+                                                        </g>
+                                                    </g>
+                                                </g>
+                                            </svg> -->
+                                        </div>
+                                    </div>
+                                    <div class="d--hidden">
+                                        <div class="logo w-embed">
+                                            <svg style="display:block;" width="100%" height="100%" viewBox="0 0 164 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                <g id="UI-Design" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                                    <g id="Potential-Motors---UI---Navigation-01" transform="translate(-34.000000, -29.000000)">
+                                                        <rect fill="none" x="0" y="0" width="1440" height="810"></rect>
+                                                        <g id="Page-Elements/Head---" transform="translate(34.000000, 14.372583)" fill="currentColor">
+                                                            <g id="Brand-Elements/Logo---Mark-+-Text-(Horizontal)" transform="translate(0.000000, 14.627417)">
+                                                                <path d="M63.1164414,11.1221719 C63.5848179,11.1221719 63.8047298,10.8927159 63.8047298,10.4959997 L63.8047298,9.67146937 C63.8136376,9.57714189 63.8015484,9.48193954 63.7693371,9.39278178 C63.7371258,9.30362402 63.6856672,9.22265828 63.6184609,9.15577008 C63.5513341,9.08880234 63.4702092,9.03758236 63.380972,9.00568918 C63.2916551,8.97379599 63.1964528,8.96202494 63.1020458,8.9712509 L59.1898415,8.9712509 L59.1898415,11.1221719 L63.1164414,11.1221719 Z M66.1945713,9.20070686 L66.1945713,10.8616181 C66.1945713,12.4007625 65.2864506,13.4522833 62.8822134,13.4522833 L59.1898415,13.4522833 L59.1898415,15.9950689 L56.8,15.9950689 L56.8,6.61008145 L62.8822134,6.61008145 C65.2959947,6.61008145 66.1945713,7.65925591 66.1945713,9.20070686 Z M78.3015745,12.7306701 C78.3016902,12.9789757 78.2053382,13.2174985 78.0326696,13.3958936 C77.8600806,13.5742886 77.6248186,13.6785578 77.3767517,13.6866703 L72.9674591,13.6866703 C72.7197103,13.6780011 72.4850846,13.5734137 72.3129728,13.3950982 C72.1408609,13.2167827 72.0448267,12.978578 72.0449427,12.7306701 L72.0449427,9.86282848 C72.0410456,9.61253458 72.1354526,9.37067129 72.3079621,9.18925395 C72.4804716,9.0078366 72.7172447,8.9013404 72.9674591,8.89259164 L77.3767517,8.89259164 C77.6273637,8.90070413 77.8646936,9.00696172 78.0377598,9.1884586 C78.2107466,9.36995549 78.3054717,9.61213691 78.3015745,9.86282848 L78.3015745,12.7306701 Z M80.6916546,13.0581121 L80.6916546,9.5450101 C80.6916546,8.00355915 79.7809889,6.60786245 77.3767517,6.60786245 L72.9674591,6.60786245 C70.5632219,6.60786245 69.6551012,8.00355915 69.6551012,9.5450101 L69.6551012,13.0628842 C69.6551012,14.6043351 70.5632219,16 72.9674591,16 L77.3767517,16 C79.7809889,16 80.6916546,14.6043351 80.6916546,13.0628842 L80.6916546,13.0581121 Z M83.3298017,8.8878196 L83.3298017,6.60786245 L93.6779872,6.60786245 L93.6779872,8.8878196 L89.7633174,8.8878196 L89.7633174,15.995228 L87.3613867,15.995228 L87.3613867,8.8878196 L83.3298017,8.8878196 Z M96.8490129,6.60786245 L96.8490129,15.995228 L105.144423,15.995228 L105.144423,13.6986004 L99.2390135,13.6986004 L99.2390135,12.4128517 L104.687897,12.4128517 L104.687897,10.1305404 L99.2390135,10.1305404 L99.2390135,8.8878196 L105.144423,8.8878196 L105.144423,6.60786245 L96.8490129,6.60786245 Z M108.956493,15.995387 L108.956493,6.60798175 L108.961265,6.47175569 L117.11749,11.6218848 L117.11749,6.60798175 L119.509877,6.60798175 L119.509877,15.995387 L119.486017,15.995387 L111.315476,10.8523921 L111.315476,15.995387 L108.956493,15.995387 Z M122.542513,6.60786245 L122.542513,8.94039166 L126.574894,8.94039166 L126.574894,15.995228 L128.976029,15.995228 L128.976029,8.94039166 L132.890699,8.94039166 L132.890699,6.60786245 L122.542513,6.60786245 Z M135.943219,6.60786245 L138.332424,6.60786245 L138.332424,15.995228 L135.943219,15.995228 L135.943219,6.60786245 Z M140.901376,15.9953075 L143.778921,15.9953075 L146.991304,10.8236803 L150.525801,15.9953075 L153.353239,15.9953075 L147.029481,6.4 L140.901376,15.9953075 Z M155.410787,15.995228 L155.410787,6.60786245 L157.82942,6.60786245 L157.82942,13.7176886 L163.411921,13.7176886 L163.411921,15.995228 L155.410787,15.995228 Z M23.7453504,5.113024 L20.9135904,2.949544 L6.9423584,13.644336 L12.6034304,13.644336 L23.7453504,5.113024 Z M30.4449504,2.949544 L27.6155904,5.113024 L38.7551104,13.634736 L44.4162304,13.634736 L30.4449504,2.949544 Z M25.6828704,3.642424 L30.4449504,0 L51.3609504,15.995296 L0,15.995296 L20.9135904,0 L25.6828704,3.642424 Z M25.6828704,3.646112 L23.7622304,5.12504 L25.6828704,6.601568 L27.6035904,5.12264 L25.6828704,3.646112 Z M25.6828704,6.605256 L16.4784704,13.644336 L34.8848704,13.644336 L25.6828704,6.605256 Z"></path>
+                                                            </g>
+                                                        </g>
+                                                    </g>
+                                                </g>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div id="w-node-_2fbd7b22-32f6-8b0a-fe70-27d91d6e487b-1d6e486c" class="nav__grid-right w-clearfix">
+                                <a href="/company" class="nav__link right">Company</a>
+                                <a href="#" class="nav__button right w-inline-block">
+                                    <div class="w-embed">
+                                        <svg width="3em" height=".5em" viewBox="0 0 48 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                            <g id="UI-Design" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                                <g id="Page-Elements/Head---" transform="translate(-292.000000, -28.000000)" fill="currentColor">
+                                                    <path d="M292,28 L340,28 L340,30 L292,30 L292,28 Z M292,34 L340,34 L340,36 L292,36 L292,34 Z" id="Combined-Shape"></path>
+                                                </g>
+                                            </g>
+                                        </svg>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="section__bkg-overlay gradient"></div>
+                    </nav>
+                    <div class="nav--menu-wrapper">
+                        <div class="nav--menu">
+                            <div class="nav__menu-top">
+                                <a href="/unused/old-home" class="logo--wrapper w-inline-block">
+                                    <div class="logo w-embed">
+                                        <svg style="display:block;" width="100%" height="100%" viewBox="0 0 164 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                            <g id="UI-Design" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                                <g id="Potential-Motors---UI---Navigation-01" transform="translate(-34.000000, -29.000000)">
+                                                    <rect fill="none" x="0" y="0" width="1440" height="810"></rect>
+                                                    <g id="Page-Elements/Head---" transform="translate(34.000000, 14.372583)" fill="currentColor">
+                                                        <g id="Brand-Elements/Logo---Mark-+-Text-(Horizontal)" transform="translate(0.000000, 14.627417)">
+                                                            <path d="M63.1164414,11.1221719 C63.5848179,11.1221719 63.8047298,10.8927159 63.8047298,10.4959997 L63.8047298,9.67146937 C63.8136376,9.57714189 63.8015484,9.48193954 63.7693371,9.39278178 C63.7371258,9.30362402 63.6856672,9.22265828 63.6184609,9.15577008 C63.5513341,9.08880234 63.4702092,9.03758236 63.380972,9.00568918 C63.2916551,8.97379599 63.1964528,8.96202494 63.1020458,8.9712509 L59.1898415,8.9712509 L59.1898415,11.1221719 L63.1164414,11.1221719 Z M66.1945713,9.20070686 L66.1945713,10.8616181 C66.1945713,12.4007625 65.2864506,13.4522833 62.8822134,13.4522833 L59.1898415,13.4522833 L59.1898415,15.9950689 L56.8,15.9950689 L56.8,6.61008145 L62.8822134,6.61008145 C65.2959947,6.61008145 66.1945713,7.65925591 66.1945713,9.20070686 Z M78.3015745,12.7306701 C78.3016902,12.9789757 78.2053382,13.2174985 78.0326696,13.3958936 C77.8600806,13.5742886 77.6248186,13.6785578 77.3767517,13.6866703 L72.9674591,13.6866703 C72.7197103,13.6780011 72.4850846,13.5734137 72.3129728,13.3950982 C72.1408609,13.2167827 72.0448267,12.978578 72.0449427,12.7306701 L72.0449427,9.86282848 C72.0410456,9.61253458 72.1354526,9.37067129 72.3079621,9.18925395 C72.4804716,9.0078366 72.7172447,8.9013404 72.9674591,8.89259164 L77.3767517,8.89259164 C77.6273637,8.90070413 77.8646936,9.00696172 78.0377598,9.1884586 C78.2107466,9.36995549 78.3054717,9.61213691 78.3015745,9.86282848 L78.3015745,12.7306701 Z M80.6916546,13.0581121 L80.6916546,9.5450101 C80.6916546,8.00355915 79.7809889,6.60786245 77.3767517,6.60786245 L72.9674591,6.60786245 C70.5632219,6.60786245 69.6551012,8.00355915 69.6551012,9.5450101 L69.6551012,13.0628842 C69.6551012,14.6043351 70.5632219,16 72.9674591,16 L77.3767517,16 C79.7809889,16 80.6916546,14.6043351 80.6916546,13.0628842 L80.6916546,13.0581121 Z M83.3298017,8.8878196 L83.3298017,6.60786245 L93.6779872,6.60786245 L93.6779872,8.8878196 L89.7633174,8.8878196 L89.7633174,15.995228 L87.3613867,15.995228 L87.3613867,8.8878196 L83.3298017,8.8878196 Z M96.8490129,6.60786245 L96.8490129,15.995228 L105.144423,15.995228 L105.144423,13.6986004 L99.2390135,13.6986004 L99.2390135,12.4128517 L104.687897,12.4128517 L104.687897,10.1305404 L99.2390135,10.1305404 L99.2390135,8.8878196 L105.144423,8.8878196 L105.144423,6.60786245 L96.8490129,6.60786245 Z M108.956493,15.995387 L108.956493,6.60798175 L108.961265,6.47175569 L117.11749,11.6218848 L117.11749,6.60798175 L119.509877,6.60798175 L119.509877,15.995387 L119.486017,15.995387 L111.315476,10.8523921 L111.315476,15.995387 L108.956493,15.995387 Z M122.542513,6.60786245 L122.542513,8.94039166 L126.574894,8.94039166 L126.574894,15.995228 L128.976029,15.995228 L128.976029,8.94039166 L132.890699,8.94039166 L132.890699,6.60786245 L122.542513,6.60786245 Z M135.943219,6.60786245 L138.332424,6.60786245 L138.332424,15.995228 L135.943219,15.995228 L135.943219,6.60786245 Z M140.901376,15.9953075 L143.778921,15.9953075 L146.991304,10.8236803 L150.525801,15.9953075 L153.353239,15.9953075 L147.029481,6.4 L140.901376,15.9953075 Z M155.410787,15.995228 L155.410787,6.60786245 L157.82942,6.60786245 L157.82942,13.7176886 L163.411921,13.7176886 L163.411921,15.995228 L155.410787,15.995228 Z M23.7453504,5.113024 L20.9135904,2.949544 L6.9423584,13.644336 L12.6034304,13.644336 L23.7453504,5.113024 Z M30.4449504,2.949544 L27.6155904,5.113024 L38.7551104,13.634736 L44.4162304,13.634736 L30.4449504,2.949544 Z M25.6828704,3.642424 L30.4449504,0 L51.3609504,15.995296 L0,15.995296 L20.9135904,0 L25.6828704,3.642424 Z M25.6828704,3.646112 L23.7622304,5.12504 L25.6828704,6.601568 L27.6035904,5.12264 L25.6828704,3.646112 Z M25.6828704,6.605256 L16.4784704,13.644336 L34.8848704,13.644336 L25.6828704,6.605256 Z"></path>
+                                                        </g>
+                                                    </g>
+                                                </g>
+                                            </g>
+                                        </svg>
+                                    </div>
+                                </a>
+                                <a href="#" class="nav__menu-close w-inline-block">
+                                    <img src="https://assets-global.website-files.com/62c5cbb3b108960b692f0576/62d023ee6b4254016a42d41d_Close.svg" loading="lazy" alt=""/>
+                                </a>
+                            </div>
+                            <div class="container nav__menu-container">
+                                <div class="nav__menu-grid">
+                                    <a id="w-node-_2fbd7b22-32f6-8b0a-fe70-27d91d6e4889-1d6e486c" href="/adventure1" class="nav__menu-link w-inline-block">
+                                        <div class="nav__menu-link-label--small">[01]</div>
+                                        <div class="nav__menu-link-label--big">Vehicle</div>
+                                    </a>
+                                    <a id="w-node-_2fbd7b22-32f6-8b0a-fe70-27d91d6e4893-1d6e486c" href="/off-road-os" class="nav__menu-link w-inline-block">
+                                        <div class="nav__menu-link-label--small">[02]</div>
+                                        <div class="nav__menu-link-label--big">Technology</div>
+                                    </a>
+                                    <a id="w-node-_2fbd7b22-32f6-8b0a-fe70-27d91d6e489d-1d6e486c" href="/company" class="nav__menu-link w-inline-block">
+                                        <div class="nav__menu-link-label--small">[03]</div>
+                                        <div class="nav__menu-link-label--big">Company</div>
+                                    </a>
+                                    <a id="w-node-_2fbd7b22-32f6-8b0a-fe70-27d91d6e488e-1d6e486c" href="/stories" class="nav__menu-link w-inline-block">
+                                        <div class="nav__menu-link-label--small">[04]</div>
+                                        <div class="nav__menu-link-label--big">Stories</div>
+                                    </a>
+                                    <a id="w-node-_2fbd7b22-32f6-8b0a-fe70-27d91d6e4898-1d6e486c" href="/careers" class="nav__menu-link w-inline-block">
+                                        <div class="nav__menu-link-label--small">[05]</div>
+                                        <div class="nav__menu-link-label--big">Careers</div>
+                                    </a>
+                                    <a id="w-node-_2fbd7b22-32f6-8b0a-fe70-27d91d6e48a2-1d6e486c" href="/contact" class="nav__menu-link w-inline-block">
+                                        <div class="nav__menu-link-label--small">[06]</div>
+                                        <div class="nav__menu-link-label--big">Contact</div>
+                                    </a>
+                                    <a id="w-node-af8a818a-6684-b2cf-1361-bb7bbe0389ac-1d6e486c" href="/media" class="nav__menu-link w-inline-block">
+                                        <div class="nav__menu-link-label--small">[07]</div>
+                                        <div class="nav__menu-link-label--big">Media</div>
+                                    </a>
+                                </div>
+                                <div class="flex--horizontal nav__social">
+                                    <a href="https://www.facebook.com/" target="_blank" class="social-link w-inline-block">
+                                        <img src="https://assets-global.website-files.com/62c5cbb3b108960b692f0576/63007137d7739c2d4cce16c9_Facebook.svg" loading="lazy" alt="" class="footer__link-social-image"/>
+                                        <div class="m--hide">Facebook</div>
+                                    </a>
+                                    <a href="https://www.instagram.com/" target="_blank" class="social-link w-inline-block">
+                                        <img src="https://assets-global.website-files.com/62c5cbb3b108960b692f0576/630071378c5e091cb4fe8155_Instagram.svg" loading="lazy" alt="" class="footer__link-social-image"/>
+                                        <div class="m--hide">Instagram</div>
+                                    </a>
+                                    <!-- <a href="https://twitter.com/" target="_blank" class="social-link w-inline-block">
+                                        <img src="https://assets-global.website-files.com/62c5cbb3b108960b692f0576/630071372e6fcd1fb6f98f90_Twitter.svg" loading="lazy" alt="" class="footer__link-social-image"/>
+                                        <div class="m--hide">Twitter</div>
+                                    </a> -->
+                                    <a href="http://www.linkedin.com/" target="_blank" class="social-link last w-inline-block">
+                                        <img src="https://assets-global.website-files.com/62c5cbb3b108960b692f0576/6300713795f7174320da9502_Linkedin.svg" loading="lazy" alt="" class="footer__link-social-image"/>
+                                        <div class="m--hide">Linkedin</div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="nav--menu__bkg"></div>
+                    </div>
+                    <div class="newsletter__alert">
+                        <div class="newsletter__main--white">
+                            <div class="newsletter__form-wrapper w-form">
+                                <form id="wf-form-Newsletter-Popup" name="wf-form-Newsletter-Popup" data-name="Newsletter Popup" method="get" data-wf-page-id="63176d371d247373c48f216e" data-wf-element-id="fc6cb72b-6503-3bb3-89d0-28b607acf125">
+                                    <h4 class="content__lead mb--4">Join our newsletter</h4>
+                                    <p class="content__copy--gray">Bringing the overland experience</p>
+                                    <div class="newsletter__form">
+                                        <input class="form__input newsletter__input w-input" maxlength="256" name="Newsletter-Email" data-name="Newsletter Email" placeholder="Email Address" type="email" id="Newsletter-Email" required=""/>
+                                        <input type="submit" data-wait="Join" class="button button--dark newsletter__btn w-button" value="Join"/>
+                                    </div>
+                                </form>
+                                <div class="newsletter-form__success w-form-done">
+                                    <div class="newsletter-form__success-content">
+                                        <div class="newsletter-form__success-icon"></div>
+                                        <div class="newsletter__form center">
+                                            <div>Thanks for subscribing!</div>
+                                            <a href="#" class="button button--dark newsletter__btn newsletter__alert-close w-button">close</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="w-form-fail">
+                                    <div>Oops! Something went wrong while submitting the form.</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="callout__white"></div>
+                        <div class="callout__black"></div>
+                        <div class="newsletter__alert-close">
+                            <img src="https://assets-global.website-files.com/62c5cbb3b108960b692f0576/62f41def37dc73118e68efda_Group%206.svg" loading="lazy" alt=""/>
+                        </div>
+                    </div>
+                </div>
+                <section id="section3" class="section--wrapper">
+                    <a href="#section3" class="anchor w-inline-block"></a>
+                    <div class="section-bkg--wrapper">
+                        <img src="imgs/1 (10).png" loading="lazy"  alt="" class="image--full"/>
+                    </div>
+                    <div class="section section__full section--fixed">
+                        <div class="container flex--vertical justify--space-between m--start w-container">
+                            <div class="content__top-bar no-line">
+                                <div class="content__help-slick">[00 - 2]</div>
+                                <h2 scroll-anim="true" class="content__title--main-slick">The 2025 Sea-Doo Lineup</h2>
+                                <div id="w-node-_0f9dbe39-a9c1-bd45-a1e6-00376fb6823b-c48f216e" class="content__help-slick right">[Sea-Doo]</div>
+                            </div>
+                            <div class="content__bottom-bar justify--end">
+                                <div class="bottom-block__wrapper">
+                                    <div class="callout">
+                                        <a href="/off-road-os" class="callout__main w-inline-block">
+                                            <h4 class="content__lead mb--12">Get ready for something extraordinary</h4>
+                                            <p class="content__copy--gray mb--32">A fresh take on the Sea-Doo Life. Fish, Race, Chill, Play. With a 2025 Sea-Doo, it’s your ride, so you make the rules.</p>
+                                            <div class="link--icon">
+                                                <div class="w-embed">
+                                                    <svg width="17px" height="18px" viewBox="0 0 17 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                        <g id="UI-Design" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                                            <g id="Potential-Motors---UI---Home-Page-02" transform="translate(-62.000000, -3163.000000)" fill="currentColor" fill-rule="nonzero">
+                                                                <g id="Screen-01-Copy-2" transform="translate(0.000000, 2430.000000)">
+                                                                    <g id="Group-9" transform="translate(34.000000, 578.000000)">
+                                                                        <g id="Group-6-Copy" transform="translate(24.000000, 152.000000)">
+                                                                            <path d="M20.4138932,10.9998932 L20.4198932,11.0058932 L20.4058932,13.0078932 L12.7071068,20.7071068 L11.2928932,19.2928932 L17.584,12.9998932 L4,13 L4,11 L20.4138932,10.9998932 Z M12.7071068,3.29289322 L17.7068932,8.29289322 L16.2928932,9.70689322 L11.2928932,4.70710678 L12.7071068,3.29289322 Z" id="Combined-Shape"></path>
+                                                                        </g>
+                                                                    </g>
+                                                                </g>
+                                                            </g>
+                                                        </g>
+                                                    </svg>
+                                                </div>
+                                                <div>Learn More</div>
+                                            </div>
+                                        </a>
+                                        <div class="callout__white"></div>
+                                        <div class="callout__black"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bkg--gradient"></div>
+                    </div>
+                </section>
+                <section id="section4" class="section--wrapper">
+                    <div class="bkg--gradient"></div>
+                    <a href="#section4" class="anchor w-inline-block"></a>
+                    <div class="section-bkg--wrapper">
+                        <img src="imgs/1 (1).jpg" loading="lazy"  alt="" class="image--full"/>
+                    </div>
+                    <div class="section section__full section--fixed">
+                        <div class="container flex--vertical justify--space-between m--start w-container">
+                            <div class="content__top-bar no-line">
+                                <div class="content__help-slick">[00 - 3]</div>
+                                <h2 scroll-anim="true" class="content__title--main-slick m-width--70">Ski-Doo 2025</h2>
+                                <div id="w-node-_0f9dbe39-a9c1-bd45-a1e6-00376fb6824d-c48f216e" class="content__help-slick right">[Ski-Doo]</div>
+                            </div>
+                            <div class="content__bottom-bar">
+                                <div class="bottom-block__wrapper">
+                                    <div class="callout">
+                                        <a href="/adventure1" class="callout__main w-inline-block">
+                                            <h4 class="content__lead mb--12">Charge harder, climb higher, carve truer</h4>
+                                            <!-- <p class="content__copy--gray mb--32">We believe it &#x27;s here to stay, it &#x27;s just going somewhere new.</p> -->
+                                            <div class="link--icon">
+                                                <div class="w-embed">
+                                                    <svg width="17px" height="18px" viewBox="0 0 17 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                        <g id="UI-Design" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                                            <g id="Potential-Motors---UI---Home-Page-02" transform="translate(-62.000000, -3163.000000)" fill="currentColor" fill-rule="nonzero">
+                                                                <g id="Screen-01-Copy-2" transform="translate(0.000000, 2430.000000)">
+                                                                    <g id="Group-9" transform="translate(34.000000, 578.000000)">
+                                                                        <g id="Group-6-Copy" transform="translate(24.000000, 152.000000)">
+                                                                            <path d="M20.4138932,10.9998932 L20.4198932,11.0058932 L20.4058932,13.0078932 L12.7071068,20.7071068 L11.2928932,19.2928932 L17.584,12.9998932 L4,13 L4,11 L20.4138932,10.9998932 Z M12.7071068,3.29289322 L17.7068932,8.29289322 L16.2928932,9.70689322 L11.2928932,4.70710678 L12.7071068,3.29289322 Z" id="Combined-Shape"></path>
+                                                                        </g>
+                                                                    </g>
+                                                                </g>
+                                                            </g>
+                                                        </g>
+                                                    </svg>
+                                                </div>
+                                                <div>Our Vision</div>
+                                            </div>
+                                        </a>
+                                        <div class="callout__white"></div>
+                                        <div class="callout__black"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="overlay--bkg home__intro-bkg-4"></div>
+                    </div>
+                </section>
+								<section id="section5" class="section--wrapper">
+									<div class="bkg--gradient"></div>
+									<a href="#section5" class="anchor w-inline-block"></a>
+									<div class="section-bkg--wrapper">
+											<img src="imgs/1 (5).jpg" loading="lazy"  alt="" class="image--full"/>
+									</div>
+									<div class="section section__full section--fixed">
+											<div class="container flex--vertical justify--space-between m--start w-container">
+													<div class="content__top-bar no-line">
+															<div class="content__help-slick">[00 - 4]</div>
+															<h2 scroll-anim="true" class="content__title--main-slick m-width--70">Lynx My2025 Is Here</h2>
+															<div id="w-node-_0f9dbe39-a9c1-bd45-a1e6-00376fb6824d-c48f216e" class="content__help-slick right">[Lynx]</div>
+													</div>
+													<div class="content__bottom-bar">
+															<div class="bottom-block__wrapper">
+																	<div class="callout">
+																			<a href="/adventure1" class="callout__main w-inline-block">
+																					<h4 class="content__lead mb--12">Discover the models 2025</h4>
+																					<!-- <p class="content__copy--gray mb--32">We believe it &#x27;s here to stay, it &#x27;s just going somewhere new.</p> -->
+																					<div class="link--icon">
+																							<div class="w-embed">
+																									<svg width="17px" height="18px" viewBox="0 0 17 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+																											<g id="UI-Design" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+																													<g id="Potential-Motors---UI---Home-Page-02" transform="translate(-62.000000, -3163.000000)" fill="currentColor" fill-rule="nonzero">
+																															<g id="Screen-01-Copy-2" transform="translate(0.000000, 2430.000000)">
+																																	<g id="Group-9" transform="translate(34.000000, 578.000000)">
+																																			<g id="Group-6-Copy" transform="translate(24.000000, 152.000000)">
+																																					<path d="M20.4138932,10.9998932 L20.4198932,11.0058932 L20.4058932,13.0078932 L12.7071068,20.7071068 L11.2928932,19.2928932 L17.584,12.9998932 L4,13 L4,11 L20.4138932,10.9998932 Z M12.7071068,3.29289322 L17.7068932,8.29289322 L16.2928932,9.70689322 L11.2928932,4.70710678 L12.7071068,3.29289322 Z" id="Combined-Shape"></path>
+																																			</g>
+																																	</g>
+																															</g>
+																													</g>
+																											</g>
+																									</svg>
+																							</div>
+																							<div>Learn More</div>
+																					</div>
+																			</a>
+																			<div class="callout__white"></div>
+																			<div class="callout__black"></div>
+																	</div>
+															</div>
+													</div>
+											</div>
+											<div class="overlay--bkg home__intro-bkg-4"></div>
+									</div>
+							</section>
+							<section id="section6" class="section--wrapper">
+								<div class="bkg--gradient"></div>
+								<a href="#section6" class="anchor w-inline-block"></a>
+								<div class="section-bkg--wrapper">
+										<img src="imgs/1 (6).jpg" loading="lazy"  alt="" class="image--full"/>
+								</div>
+								<div class="section section__full section--fixed">
+										<div class="container flex--vertical justify--space-between m--start w-container">
+												<div class="content__top-bar no-line">
+														<div class="content__help-slick">[00 - 5]</div>
+														<h2 scroll-anim="true" class="content__title--main-slick m-width--70">Can-Am at Dakar Rally 2024</h2>
+														<div id="w-node-_0f9dbe39-a9c1-bd45-a1e6-00376fb6824d-c48f216e" class="content__help-slick right">[Rally]</div>
+												</div>
+												<div class="content__bottom-bar">
+														<div class="bottom-block__wrapper">
+																<div class="callout">
+																		<a href="/adventure1" class="callout__main w-inline-block">
+																				<h4 class="content__lead mb--12">Discover the models 2025</h4>
+																				<!-- <p class="content__copy--gray mb--32">We believe it &#x27;s here to stay, it &#x27;s just going somewhere new.</p> -->
+																				<div class="link--icon">
+																						<div class="w-embed">
+																								<svg width="17px" height="18px" viewBox="0 0 17 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+																										<g id="UI-Design" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+																												<g id="Potential-Motors---UI---Home-Page-02" transform="translate(-62.000000, -3163.000000)" fill="currentColor" fill-rule="nonzero">
+																														<g id="Screen-01-Copy-2" transform="translate(0.000000, 2430.000000)">
+																																<g id="Group-9" transform="translate(34.000000, 578.000000)">
+																																		<g id="Group-6-Copy" transform="translate(24.000000, 152.000000)">
+																																				<path d="M20.4138932,10.9998932 L20.4198932,11.0058932 L20.4058932,13.0078932 L12.7071068,20.7071068 L11.2928932,19.2928932 L17.584,12.9998932 L4,13 L4,11 L20.4138932,10.9998932 Z M12.7071068,3.29289322 L17.7068932,8.29289322 L16.2928932,9.70689322 L11.2928932,4.70710678 L12.7071068,3.29289322 Z" id="Combined-Shape"></path>
+																																		</g>
+																																</g>
+																														</g>
+																												</g>
+																										</g>
+																								</svg>
+																						</div>
+																						<div>Learn More</div>
+																				</div>
+																		</a>
+																		<div class="callout__white"></div>
+																		<div class="callout__black"></div>
+																</div>
+														</div>
+												</div>
+										</div>
+										<div class="overlay--bkg home__intro-bkg-4"></div>
+								</div>
+						</section>
+						<section id="section7" class="section--wrapper">
+							<div class="bkg--gradient"></div>
+							<a href="#section7" class="anchor w-inline-block"></a>
+							<div class="section-bkg--wrapper">
+									<img src="imgs/1 (4).jpg" loading="lazy"  alt="" class="image--full"/>
+							</div>
+							<div class="section section__full section--fixed">
+									<div class="container flex--vertical justify--space-between m--start w-container">
+											<div class="content__top-bar no-line">
+													<div class="content__help-slick">[00 - 6]</div>
+													<h2 scroll-anim="true" class="content__title--main-slick m-width--70">The Shoe Surgeon x Can-Am</h2>
+													<div id="w-node-_0f9dbe39-a9c1-bd45-a1e6-00376fb6824d-c48f216e" class="content__help-slick right">[City]</div>
+											</div>
+											<div class="content__bottom-bar">
+													<div class="bottom-block__wrapper">
+															<div class="callout">
+																	<a href="/adventure1" class="callout__main w-inline-block">
+																			<h4 class="content__lead mb--12">Discover the models 2025</h4>
+																			<!-- <p class="content__copy--gray mb--32">We believe it &#x27;s here to stay, it &#x27;s just going somewhere new.</p> -->
+																			<div class="link--icon">
+																					<div class="w-embed">
+																							<svg width="17px" height="18px" viewBox="0 0 17 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+																									<g id="UI-Design" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+																											<g id="Potential-Motors---UI---Home-Page-02" transform="translate(-62.000000, -3163.000000)" fill="currentColor" fill-rule="nonzero">
+																													<g id="Screen-01-Copy-2" transform="translate(0.000000, 2430.000000)">
+																															<g id="Group-9" transform="translate(34.000000, 578.000000)">
+																																	<g id="Group-6-Copy" transform="translate(24.000000, 152.000000)">
+																																			<path d="M20.4138932,10.9998932 L20.4198932,11.0058932 L20.4058932,13.0078932 L12.7071068,20.7071068 L11.2928932,19.2928932 L17.584,12.9998932 L4,13 L4,11 L20.4138932,10.9998932 Z M12.7071068,3.29289322 L17.7068932,8.29289322 L16.2928932,9.70689322 L11.2928932,4.70710678 L12.7071068,3.29289322 Z" id="Combined-Shape"></path>
+																																	</g>
+																															</g>
+																													</g>
+																											</g>
+																									</g>
+																							</svg>
+																					</div>
+																					<div>Learn More</div>
+																			</div>
+																	</a>
+																	<div class="callout__white"></div>
+																	<div class="callout__black"></div>
+															</div>
+													</div>
+											</div>
+									</div>
+									<div class="overlay--bkg home__intro-bkg-4"></div>
+							</div>
+					</section>
+            </div>
+            <!-- <div data-w-id="0f9dbe39-a9c1-bd45-a1e6-00376fb68253" class="section py--160">
+                <div class="container w-container">
+                    <div class="flex--horizontal align--end mb--80 m--vertical m--align-start">
+                        <h2 class="content__title--main dark">The Latest News</h2>
+                        <div class="button-wrapper__trigger m--hide hide">
+                            <div class="button-wrapper">
+                                <a href="/stories" class="button w-inline-block">
+                                    <div>View All</div>
+                                </a>
+                                <div class="button button--dark button--bkg">
+                                    <div>View All</div>
+                                </div>
+                                <div class="button button--bkg">
+                                    <div>View All</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="m--scroll-wrapper w-dyn-list">
+                        <div role="list" class="flex--horizontal collection__list w-dyn-items">
+                            <div role="listitem" class="collection__card-item-wrapper w-dyn-item">
+                                <a href="https://expeditionportal.com/niche-ev-adventure-1-orv-teams-up-with-egoe/" target="_blank" class="collection__card-item w-inline-block">
+                                    <div class="flex--horizontal align--start">
+                                        <img loading="lazy" alt="" src="https://assets-global.website-files.com/62e590c86e26a32e39ffddae/634567e7ee777f2877f808b6_expedition-portal-logo.png" class="collection__card-item-logo home-item"/>
+                                        <div class="collection__card-item-date home-item">October 4, 2022</div>
+                                    </div>
+                                    <div class="collection__card-item-title">Adventure 1 ORV Teams Up With Egoe</div>
+                                    <img loading="lazy" alt="Adventure 1 ORV Teams Up With Egoe" src="https://assets-global.website-files.com/62e590c86e26a32e39ffddae/634568cb417781133a70e171_interior_render_2%20(1).png" sizes="(max-width: 479px) 100vw, (max-width: 767px) 58vw, (max-width: 991px) 31vw, 30vw" srcset="https://assets-global.website-files.com/62e590c86e26a32e39ffddae/634568cb417781133a70e171_interior_render_2%20(1)-p-500.png 500w, https://assets-global.website-files.com/62e590c86e26a32e39ffddae/634568cb417781133a70e171_interior_render_2%20(1)-p-800.png 800w, https://assets-global.website-files.com/62e590c86e26a32e39ffddae/634568cb417781133a70e171_interior_render_2%20(1)-p-1080.png 1080w, https://assets-global.website-files.com/62e590c86e26a32e39ffddae/634568cb417781133a70e171_interior_render_2%20(1).png 1100w" class="collection__card-item--bkg"/>
+                                </a>
+                                <div class="anim__overlay beige"></div>
+                            </div>
+                            <div role="listitem" class="collection__card-item-wrapper w-dyn-item">
+                                <a href="https://electrek.co/2022/09/09/potential-motors-launching-an-off-road-electric-rv-called-the-adventure-1%EF%BF%BC%EF%BF%BC%EF%BF%BC%EF%BF%BC%EF%BF%BC%EF%BF%BC%EF%BF%BC%EF%BF%BC%EF%BF%BC%EF%BF%BC%EF%BF%BC/" target="_blank" class="collection__card-item w-inline-block">
+                                    <div class="flex--horizontal align--start">
+                                        <img loading="lazy" alt="" src="https://assets-global.website-files.com/62e590c86e26a32e39ffddae/63221fdbcf62be3053fbd995_cropped-electrek-logo11.webp" class="collection__card-item-logo home-item"/>
+                                        <div class="collection__card-item-date home-item">September 9, 2022</div>
+                                    </div>
+                                    <div class="collection__card-item-title">Your future camping expeditions could be in this off-road electric RV called the Adventure 1</div>
+                                    <img loading="lazy" alt="Your future camping expeditions could be in this off-road electric RV called the Adventure 1" src="https://assets-global.website-files.com/62e590c86e26a32e39ffddae/63221b527573e129dc092c81_2.png" sizes="(max-width: 479px) 100vw, (max-width: 767px) 58vw, (max-width: 991px) 31vw, 30vw" srcset="https://assets-global.website-files.com/62e590c86e26a32e39ffddae/63221b527573e129dc092c81_2-p-500.png 500w, https://assets-global.website-files.com/62e590c86e26a32e39ffddae/63221b527573e129dc092c81_2-p-800.png 800w, https://assets-global.website-files.com/62e590c86e26a32e39ffddae/63221b527573e129dc092c81_2.png 874w" class="collection__card-item--bkg"/>
+                                </a>
+                                <div class="anim__overlay beige"></div>
+                            </div>
+                            <div role="listitem" class="collection__card-item-wrapper w-dyn-item">
+                                <a href="https://www.motortrend.com/news/potential-motors-adventure-1-off-road-rv-camper-details-photos/" target="_blank" class="collection__card-item w-inline-block">
+                                    <div class="flex--horizontal align--start">
+                                        <img loading="lazy" alt="" src="https://assets-global.website-files.com/62e590c86e26a32e39ffddae/631a234f486a670cabc53856_2560px-Motor_Trend_logo.svg.png" class="collection__card-item-logo home-item"/>
+                                        <div class="collection__card-item-date home-item">September 8, 2022</div>
+                                    </div>
+                                    <div class="collection__card-item-title">The Potential Motors Adventure 1 Off-Road RV Is a $136,000 Tiny Electric Camper Van</div>
+                                    <img loading="lazy" alt="The Potential Motors Adventure 1 Off-Road RV Is a $136,000 Tiny Electric Camper Van" src="https://assets-global.website-files.com/62e590c86e26a32e39ffddae/63221bb265352b02ec5db6be_Untitled%20design%20-%202022-09-14T152127.289.png" sizes="(max-width: 479px) 100vw, (max-width: 767px) 58vw, (max-width: 991px) 31vw, 30vw" srcset="https://assets-global.website-files.com/62e590c86e26a32e39ffddae/63221bb265352b02ec5db6be_Untitled%20design%20-%202022-09-14T152127.289-p-500.png 500w, https://assets-global.website-files.com/62e590c86e26a32e39ffddae/63221bb265352b02ec5db6be_Untitled%20design%20-%202022-09-14T152127.289-p-800.png 800w, https://assets-global.website-files.com/62e590c86e26a32e39ffddae/63221bb265352b02ec5db6be_Untitled%20design%20-%202022-09-14T152127.289.png 874w" class="collection__card-item--bkg"/>
+                                </a>
+                                <div class="anim__overlay beige"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="button-wrapper__trigger mobile--button hide">
+                        <div class="button-wrapper">
+                            <a href="/stories" class="button w-inline-block">
+                                <div>View All</div>
+                            </a>
+                            <div class="button button--dark button--bkg">
+                                <div>View All</div>
+                            </div>
+                            <div class="button button--bkg">
+                                <div>View All</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+            <div class="section section--black">
+                <div class="container w-container">
+                    <div class="flex--horizontal align--end mb--80 m--vertical m--align-start">
+                        <h2 class="content__title--main">Follow Us</h2>
+                        <a href="https://www.instagram.com/" target="_blank" class="social-link mb--0 w-inline-block">
+                            <img src="https://assets-global.website-files.com/62c5cbb3b108960b692f0576/630071378c5e091cb4fe8155_Instagram.svg" loading="lazy" alt="" class="footer__link-social-image mr--8"/>
+                            <div>@MMMotors</div>
+                        </a>
+                    </div>
+                    <div class="w-dyn-list">
+                        <div role="list" class="flex--horizontal collection__list collection__grid w-dyn-items">
+                            <div id="w-node-_0f9dbe39-a9c1-bd45-a1e6-00376fb68274-c48f216e" role="listitem" class="insta__item w-dyn-item">
+                                <a href="https://www.instagram.com/" target="_blank" class="image--full-link w-inline-block">
+                                    <img loading="lazy" alt="" src="imgs/1 (2).jpg"  class="image--full"/>
+                                </a>
+                            </div>
+                            <div id="w-node-_0f9dbe39-a9c1-bd45-a1e6-00376fb68274-c48f216e" role="listitem" class="insta__item w-dyn-item">
+                                <a href="https://www.instagram.com/" target="_blank" class="image--full-link w-inline-block">
+                                    <img loading="lazy" alt="" src="imgs/1 (7).jpg"  class="image--full"/>
+                                </a>
+                            </div>
+                            <div id="w-node-_0f9dbe39-a9c1-bd45-a1e6-00376fb68274-c48f216e" role="listitem" class="insta__item w-dyn-item">
+                                <a href="https://www.instagram.com/" target="_blank" class="image--full-link w-inline-block">
+                                    <img loading="lazy" alt="" src="https://assets-global.website-files.com/62e590c86e26a32e39ffddae/63444ac7dbc82f7f0b21b585_310384154_548250927067575_6832449892379042111_n.jpeg" sizes="(max-width: 767px) 46vw, (max-width: 991px) 23vw, 22vw" srcset="https://assets-global.website-files.com/62e590c86e26a32e39ffddae/63444ac7dbc82f7f0b21b585_310384154_548250927067575_6832449892379042111_n-p-500.jpeg 500w, https://assets-global.website-files.com/62e590c86e26a32e39ffddae/63444ac7dbc82f7f0b21b585_310384154_548250927067575_6832449892379042111_n-p-800.jpeg 800w, https://assets-global.website-files.com/62e590c86e26a32e39ffddae/63444ac7dbc82f7f0b21b585_310384154_548250927067575_6832449892379042111_n-p-1080.jpeg 1080w, https://assets-global.website-files.com/62e590c86e26a32e39ffddae/63444ac7dbc82f7f0b21b585_310384154_548250927067575_6832449892379042111_n.jpeg 1440w" class="image--full"/>
+                                </a>
+                            </div>
+                            <div id="w-node-_0f9dbe39-a9c1-bd45-a1e6-00376fb68274-c48f216e" role="listitem" class="insta__item w-dyn-item">
+                                <a href="https://www.instagram.com/" target="_blank" class="image--full-link w-inline-block">
+                                    <img loading="lazy" alt="" src="imgs/1 (8).jpg"  class="image--full"/>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div class="section section__footer-form">
+                <div class="container w-container">
+                    <div class="footer__form-wrapper">
+                        <h3 class="content__title--small">
+                            Join the Insiders List<span class="span--break"></span>
+                        </h3>
+                        <div class="form form__footer w-form">
+                            <form id="email-form-2" name="email-form-2" data-name="Email Form 2" method="get" class="form__block-footer" data-wf-flow="05b1ab9662dcd4aed360124c" data-wf-page-id="63176d371d247373c48f216e" data-wf-element-id="9d60add3-9190-4387-1fb3-56304182427a">
+                                <input class="form__input input--footer w-input" maxlength="256" name="email-2" data-name="Email 2" placeholder="Email address" type="email" id="email-2" required=""/>
+                                <div class="form__footer-button">
+                                    <div class="form__footer-arrow-wrapper">
+                                        <div class="w-embed">
+                                            <svg width="17px" height="18px" viewBox="0 0 17 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                <g id="UI-Design" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                                    <g id="Potential-Motors---UI---Home-Page-02" transform="translate(-62.000000, -3163.000000)" fill="currentColor" fill-rule="nonzero">
+                                                        <g id="Screen-01-Copy-2" transform="translate(0.000000, 2430.000000)">
+                                                            <g id="Group-9" transform="translate(34.000000, 578.000000)">
+                                                                <g id="Group-6-Copy" transform="translate(24.000000, 152.000000)">
+                                                                    <path d="M20.4138932,10.9998932 L20.4198932,11.0058932 L20.4058932,13.0078932 L12.7071068,20.7071068 L11.2928932,19.2928932 L17.584,12.9998932 L4,13 L4,11 L20.4138932,10.9998932 Z M12.7071068,3.29289322 L17.7068932,8.29289322 L16.2928932,9.70689322 L11.2928932,4.70710678 L12.7071068,3.29289322 Z" id="Combined-Shape"></path>
+                                                                </g>
+                                                            </g>
+                                                        </g>
+                                                    </g>
+                                                </g>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <input type="submit" data-wait="Please wait..." class="form__footer-button--transparent w-button" value="Submit"/>
+                                </div>
+                            </form>
+                            <div class="form__success-wrapper-footer w-form-done">
+                                <div class="form__success-footer">
+                                    <h5>
+                                        Thanks for subscribing!<br/>
+                                    </h5>
+                                </div>
+                            </div>
+                            <div class="w-form-fail">
+                                <div>Oops! Something went wrong while submitting the form.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section section__footer">
+                <div class="container w-container">
+                    <div class="footer__grid">
+                        <div class="footer__col first">
+                            <a href="/" aria-current="page" class="logo--wrapper logo--footer w-inline-block w--current">
+                                <div class="logo w-embed"><img src="imgs/logo-brp1.svg" style="width: 300px; height: auto;">
+                                    <!-- <svg style="display:block;" width="100%" height="100%" viewBox="0 0 164 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                        <g id="UI-Design" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                            <g id="Potential-Motors---UI---Navigation-01" transform="translate(-34.000000, -29.000000)">
+                                                <rect fill="none" x="0" y="0" width="1440" height="810"></rect>
+                                                <g id="Page-Elements/Head---" transform="translate(34.000000, 14.372583)" fill="currentColor">
+                                                    <g id="Brand-Elements/Logo---Mark-+-Text-(Horizontal)" transform="translate(0.000000, 14.627417)">
+                                                        <path d="M63.1164414,11.1221719 C63.5848179,11.1221719 63.8047298,10.8927159 63.8047298,10.4959997 L63.8047298,9.67146937 C63.8136376,9.57714189 63.8015484,9.48193954 63.7693371,9.39278178 C63.7371258,9.30362402 63.6856672,9.22265828 63.6184609,9.15577008 C63.5513341,9.08880234 63.4702092,9.03758236 63.380972,9.00568918 C63.2916551,8.97379599 63.1964528,8.96202494 63.1020458,8.9712509 L59.1898415,8.9712509 L59.1898415,11.1221719 L63.1164414,11.1221719 Z M66.1945713,9.20070686 L66.1945713,10.8616181 C66.1945713,12.4007625 65.2864506,13.4522833 62.8822134,13.4522833 L59.1898415,13.4522833 L59.1898415,15.9950689 L56.8,15.9950689 L56.8,6.61008145 L62.8822134,6.61008145 C65.2959947,6.61008145 66.1945713,7.65925591 66.1945713,9.20070686 Z M78.3015745,12.7306701 C78.3016902,12.9789757 78.2053382,13.2174985 78.0326696,13.3958936 C77.8600806,13.5742886 77.6248186,13.6785578 77.3767517,13.6866703 L72.9674591,13.6866703 C72.7197103,13.6780011 72.4850846,13.5734137 72.3129728,13.3950982 C72.1408609,13.2167827 72.0448267,12.978578 72.0449427,12.7306701 L72.0449427,9.86282848 C72.0410456,9.61253458 72.1354526,9.37067129 72.3079621,9.18925395 C72.4804716,9.0078366 72.7172447,8.9013404 72.9674591,8.89259164 L77.3767517,8.89259164 C77.6273637,8.90070413 77.8646936,9.00696172 78.0377598,9.1884586 C78.2107466,9.36995549 78.3054717,9.61213691 78.3015745,9.86282848 L78.3015745,12.7306701 Z M80.6916546,13.0581121 L80.6916546,9.5450101 C80.6916546,8.00355915 79.7809889,6.60786245 77.3767517,6.60786245 L72.9674591,6.60786245 C70.5632219,6.60786245 69.6551012,8.00355915 69.6551012,9.5450101 L69.6551012,13.0628842 C69.6551012,14.6043351 70.5632219,16 72.9674591,16 L77.3767517,16 C79.7809889,16 80.6916546,14.6043351 80.6916546,13.0628842 L80.6916546,13.0581121 Z M83.3298017,8.8878196 L83.3298017,6.60786245 L93.6779872,6.60786245 L93.6779872,8.8878196 L89.7633174,8.8878196 L89.7633174,15.995228 L87.3613867,15.995228 L87.3613867,8.8878196 L83.3298017,8.8878196 Z M96.8490129,6.60786245 L96.8490129,15.995228 L105.144423,15.995228 L105.144423,13.6986004 L99.2390135,13.6986004 L99.2390135,12.4128517 L104.687897,12.4128517 L104.687897,10.1305404 L99.2390135,10.1305404 L99.2390135,8.8878196 L105.144423,8.8878196 L105.144423,6.60786245 L96.8490129,6.60786245 Z M108.956493,15.995387 L108.956493,6.60798175 L108.961265,6.47175569 L117.11749,11.6218848 L117.11749,6.60798175 L119.509877,6.60798175 L119.509877,15.995387 L119.486017,15.995387 L111.315476,10.8523921 L111.315476,15.995387 L108.956493,15.995387 Z M122.542513,6.60786245 L122.542513,8.94039166 L126.574894,8.94039166 L126.574894,15.995228 L128.976029,15.995228 L128.976029,8.94039166 L132.890699,8.94039166 L132.890699,6.60786245 L122.542513,6.60786245 Z M135.943219,6.60786245 L138.332424,6.60786245 L138.332424,15.995228 L135.943219,15.995228 L135.943219,6.60786245 Z M140.901376,15.9953075 L143.778921,15.9953075 L146.991304,10.8236803 L150.525801,15.9953075 L153.353239,15.9953075 L147.029481,6.4 L140.901376,15.9953075 Z M155.410787,15.995228 L155.410787,6.60786245 L157.82942,6.60786245 L157.82942,13.7176886 L163.411921,13.7176886 L163.411921,15.995228 L155.410787,15.995228 Z M23.7453504,5.113024 L20.9135904,2.949544 L6.9423584,13.644336 L12.6034304,13.644336 L23.7453504,5.113024 Z M30.4449504,2.949544 L27.6155904,5.113024 L38.7551104,13.634736 L44.4162304,13.634736 L30.4449504,2.949544 Z M25.6828704,3.642424 L30.4449504,0 L51.3609504,15.995296 L0,15.995296 L20.9135904,0 L25.6828704,3.642424 Z M25.6828704,3.646112 L23.7622304,5.12504 L25.6828704,6.601568 L27.6035904,5.12264 L25.6828704,3.646112 Z M25.6828704,6.605256 L16.4784704,13.644336 L34.8848704,13.644336 L25.6828704,6.605256 Z"></path>
+                                                    </g>
+                                                </g>
+                                            </g>
+                                        </g>
+                                    </svg> -->
+                                </div>
+                            </a>
+                        </div>
+                        <div class="footer__col">
+                            <h5 class="footer__title">Explore</h5>
+                            <a href="/adventure1" class="footer__link">Vehicle</a>
+                            <a href="/off-road-os" class="footer__link">Technology</a>
+                            <a href="/company" class="footer__link last">Company</a>
+                        </div>
+                        <div class="footer__col">
+                            <h5 class="footer__title">connect</h5>
+                            <a href="/stories" class="footer__link">Stories</a>
+                            <a href="/careers" class="footer__link">Careers</a>
+                            <a href="/media" class="footer__link">Media</a>
+                            <a href="/contact" class="footer__link last">Contact</a>
+                        </div>
+                        <div class="footer__col social">
+                            <h5 class="footer__title">Social</h5>
+                            <a href="https://www.facebook.com/" target="_blank" class="social-link w-inline-block">
+                                <img src="https://assets-global.website-files.com/62c5cbb3b108960b692f0576/63007137d7739c2d4cce16c9_Facebook.svg" loading="lazy" alt="" class="footer__link-social-image"/>
+                                <div>Facebook</div>
+                            </a>
+                            <a href="https://www.instagram.com/" target="_blank" class="social-link w-inline-block">
+                                <img src="https://assets-global.website-files.com/62c5cbb3b108960b692f0576/630071378c5e091cb4fe8155_Instagram.svg" loading="lazy" alt="" class="footer__link-social-image"/>
+                                <div>Instagram</div>
+                            </a>
+                            <!-- <a href="https://twitter.com/" target="_blank" class="social-link w-inline-block">
+                                <img src="https://assets-global.website-files.com/62c5cbb3b108960b692f0576/630071372e6fcd1fb6f98f90_Twitter.svg" loading="lazy" alt="" class="footer__link-social-image"/>
+                                <div>Twitter</div>
+                            </a> -->
+                            <a href="http://www.linkedin.com/" target="_blank" class="social-link last w-inline-block">
+                                <img src="https://assets-global.website-files.com/62c5cbb3b108960b692f0576/6300713795f7174320da9502_Linkedin.svg" loading="lazy" alt="" class="footer__link-social-image"/>
+                                <div>Linkedin</div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section section__copyright">
+                <div class="container w-container">
+                    <div class="flex--horizontal m--vertical">
+                        <div>© MMMotors, 2024. All Rights Reserved.</div>
+                        
+                        <div>
+                            <a href="/legal/terms-of-use" class="section__copyright-link">Terms Of Use</a>
+                            <a href="/legal/privacy-policy" class="section__copyright-link">Privacy Policy</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="fixed w-embed">
+                <style>
+                    @media screen and (max-width: 767px) {
+                        .footer__col.social .footer__title {
+                            display: none
+                        }
+
+                        .footer__col.social .social-link div {
+                            display: none
+                        }
+                    }
+
+                    .logo--footer {
+                        color: #FFFFFF !important;
+                    }
+                </style>
+            </div>
+        </footer>
+        <script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=62c5cbb3b108960b692f0576" type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+        <script src="main.js" type="text/javascript"></script>
+        <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@0.2.28/bundled/lenis.js"></script>
+        <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+        <script src="https://unpkg.com/splitting/dist/splitting.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+        <script src="https://cdn.scaleflex.it/plugins/js-cloudimage-360-view/latest/js-cloudimage-360-view.min.js"></script>
+        <script type="text/javascript" src="https://unpkg.com/@barba/core"></script>
+        <script type="text/javascript" src="https://unpkg.com/@barba/css"></script>
+        <script src="https://thedigitalpanda.gitlab.io/potential-motors/bundle.js"></script>
+        <script>
+            //import Lenis from "https://cdn.skypack.dev/@studio-freight/lenis@0.2.28";
+
+            const lenis = new Lenis({
+                //duration: 1.2,
+                //easing: (t) => (t === 1 ? 1 : 1 - Math.pow(2, -10 * t)), // https://easings.net/en#easeOutExpo
+                lerp: 0.1,
+                direction: 'vertical',
+                // vertical, horizontal
+                gestureDirection: 'vertical',
+                // vertical, horizontal, both
+                smooth: true,
+                //smoothTouch: true,
+                //touchMultiplier: 8,
+            })
+
+            window.lenis = lenis;
+
+            function raf(time) {
+                lenis.raf(time);
+                requestAnimationFrame(raf);
+            }
+
+            requestAnimationFrame(raf);
+
+            var obs = new MutationObserver(function(mutations, observer) {
+                $.each(mutations, function(i, mutation) {
+                    var addedNodes = $(mutation.addedNodes);
+                    var selector = ".w-editor-bem-EditorApp"
+                    var filteredEls = addedNodes.parent(selector);
+                    filteredEls.each(function() {
+                        console.log('editor')
+                        lenis.destroy()
+                    });
+                });
+            }
+            );
+
+            obs.observe(document, {
+                childList: true,
+                subtree: true
+            });
+
+            $(document).ready(()=>{
+                $('html.w-editor').on('click', function() {
+                    $('.w-reset').attr('data-lenis-prevent', '')
+                })
+            }
+            )
+        </script>
+        <script>
+            function showNewsletter() {
+                let newsletterNotifications = JSON.parse(localStorage.getItem("newsletterNotifications")) || {};
+                $(".newsletter__alert").each((_,alert)=>{
+                    let slug = 'newsletter-alert';
+                    let activeStatus = 'true';
+                    if (activeStatus == "true") {
+                        if (!newsletterNotifications[slug]?.dismissed) {
+                            alert.classList.add("active");
+                        }
+                    }
+                }
+                );
+
+                localStorage.setItem("newsletterNotifications", JSON.stringify(newsletterNotifications));
+            }
+
+            $(".newsletter__alert-close").on("click", function() {
+                $(this).closest(".newsletter__alert").removeClass("active");
+                let newsletterNotifications = JSON.parse(localStorage.getItem("newsletterNotifications"));
+                let slug = 'newsletter-alert';
+                newsletterNotifications[slug] = {
+                    dismissed: true
+                };
+                localStorage.setItem("newsletterNotifications", JSON.stringify(newsletterNotifications));
+            });
+
+            setTimeout(()=>{
+                showNewsletter();
+            }
+            , "5000")
+        </script>
+    </body>
+</html>
